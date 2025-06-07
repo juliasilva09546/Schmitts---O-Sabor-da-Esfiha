@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title> Schmitts - O Sabor da Esfiha</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="https://i.pinimg.com/736x/b0/4d/ba/b04dba8b7592b825a66658d9feb4e17d.jpg" alt="Imagem da Esfiha">
+        </div>
+        <div class="right-side">
+            <h1 class="logo">Schmitts</h1>
+            <p class="slogan">O Sabor da Esfiha</p>
+            <a href="#combos" class="menu-button" onclick="openTab('combos-tab')">Combos</a>
+            <a href="#esfihas-doces" class="menu-button" onclick="openTab('doces-tab')">Esfihas Doces</a>
+            <a href="#esfihas-salgadas" class="menu-button" onclick="openTab('salgadas-tab')">Esfihas Salgadas</a>
+            <a href="#compre-agora" class="menu-button" onclick="openTab('compre-tab')">Compre Agora</a>
+            <div class="bottom-icons">
+            </div>
+        </div>
+    </div>
+
+    <div id="combos-tab" class="tab-content">
+        <div class="tab-inner">
+            <button class="close-button" onclick="closeTab('combos-tab')">&times;</button>
+            <h2>Combos</h2>
+            <p>Clique no link abaixo para ver nossas deliciosas porções e combos!</p>
+            <a href="https://shazamm.contteudo.com.br/porcoes/" target="_blank" class="menu-button">Ver Combos</a>
+        </div>
+    </div>
+
+    <div id="doces-tab" class="tab-content">
+        <div class="tab-inner">
+            <button class="close-button" onclick="closeTab('doces-tab')">&times;</button>
+            <h2>Esfihas Doces</h2>
+            <p>Clique no link abaixo para as nossas deliciosas esfihas doces!</p>
+            <a href="https://shazamm.contteudo.com.br/esfiha-doce/" target="_blank" class="menu-button">Ver Esfihas Doces</a>
+        </div>
+    </div>
+
+    <div id="salgadas-tab" class="tab-content">
+        <div class="tab-inner">
+            <button class="close-button" onclick="closeTab('salgadas-tab')">&times;</button>
+            <h2>Esfihas Salgadas</h2>
+            <p>Clique no link abaixo para as nossas deliciosas esfihas salgadas!</p>
+            <a href="https://shazamm.contteudo.com.br/esfiha-salgada/" target="_blank" class="menu-button">Ver Esfihas Salgadas</a>
+        </div>
+    </div>
+    
+    <div id="compre-tab" class="tab-content">
+        <div class="tab-inner">
+            <button class="close-button" onclick="closeTab('compre-tab')">&times;</button>
+            <h2>Compre Agora</h2>
+            <p>Acesse o link para selecionar o que deseja!.</p>
+            <a href="compraragora.html" target="_blank" class="menu-button">Comprar</a>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            document.getElementById(tabId).style.display = "flex";
+        }
+
+        function closeTab(tabId) {
+            document.getElementById(tabId).style.display = "none";
+        }
+    </script>
+</body>
+</html>
